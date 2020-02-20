@@ -20,6 +20,7 @@ const promptQuestions = [{
         to: `ORIGIN_PHONE_NUMBER="${promptAnswers.longCode}"`
     });
     console.log("Deploying the CallService stack")
+    execSync(`cdk bootstrap --app='node CallServiceStack.js'`, {stdio: 'inherit'});
     execSync(`cdk deploy --app='node CallServiceStack.js' CallServiceStack --require-approval never`, {stdio: 'inherit'});
     console.log("Done");
 })();
