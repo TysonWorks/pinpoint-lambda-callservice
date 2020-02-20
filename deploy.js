@@ -23,6 +23,3 @@ const promptQuestions = [{
     execSync(`cdk deploy --app='node CallServiceStack.js' CallServiceStack --require-approval never`, {stdio: 'inherit'});
     console.log("Done");
 })();
-
-
-
