@@ -1,16 +1,16 @@
 # Pinpoint CDK Call Service
 
 ### Install dependencies at the project root folder
-npm install
+`npm install`
 
 ### Change env variables in .env file
-vim .env
+`vim .env`
 
 ### Run the deploy script
-node deploy.js
+`node deploy.js`
 
 ### Destroying the stacks
-node destroy.js
+`node destroy.js`
 
 
 Accompanying blog post
